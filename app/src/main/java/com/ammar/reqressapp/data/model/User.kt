@@ -1,18 +1,13 @@
 package com.ammar.reqressapp.data.model
 
 
-import com.google.gson.annotations.SerializedName
-import android.os.Parcelable
+import java.io.Serializable
 
 data class User(
-    @SerializedName("avatar")
     val avatar: String,
-    @SerializedName("email")
     val email: String,
-    @SerializedName("first_name")
-    val firstName: String,
-    @SerializedName("id")
+    val first_name: String,
     val id: Int,
-    @SerializedName("last_name")
-    val lastName: String
-)
+    val last_name: String
+
+) : Serializable

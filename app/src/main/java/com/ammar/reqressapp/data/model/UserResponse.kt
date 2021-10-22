@@ -6,7 +6,7 @@ import java.io.Serializable
 
 @VersionedParcelize
 data class UserResponse(
-    val `data`: List<User>,
+    val data : List<User>,
     val page: Int,
     val perPage: Int,
     val support: Support,

@@ -1,4 +1,7 @@
 package com.ammar.reqressapp
 
-class ReqressApplication {
-}
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class ReqressApplication : Application()
